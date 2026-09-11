@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/bin/python:*)",
+      "Bash(chmod +x /Users/oscarspila/repos/Clinica-San-Salud/notebooklm/guia-desarrollador-ices/abrir-sitio.sh)",
+      "Bash(python3 -m http.server 8000)",
+      "Bash(open http://localhost:8000)"
+    ]
+  }
+}

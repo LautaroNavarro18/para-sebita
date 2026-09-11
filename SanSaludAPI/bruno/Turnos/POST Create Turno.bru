@@ -1,0 +1,19 @@
+meta {
+  name: POST Create Turno
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://localhost:7088/api/Turnos
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "pacienteId": "2b93b6a8-86f5-4d7f-8303-a0b70ce35c0d",
+    "medicoId": "5bc0e17d-6792-4c09-af0a-f0eab9521aa8",
+    "fechaHora": "2026-03-20T10:00:00"
+  }
+}

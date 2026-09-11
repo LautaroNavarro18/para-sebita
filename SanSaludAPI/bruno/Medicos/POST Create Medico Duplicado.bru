@@ -1,0 +1,19 @@
+meta {
+  name: POST Create Medico Duplicado
+  type: http
+  seq: 5
+}
+
+post {
+  url: https://localhost:7088/api/Medicos
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "Dra. Lucía Ríos",
+    "especialidad": "Cardiología",
+    "matricula": "MN-123456"
+  }
+}

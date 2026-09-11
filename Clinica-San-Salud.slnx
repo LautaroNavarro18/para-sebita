@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="SanSaludAPI/SanSaludAPI.csproj" />
+  <Project Path="SanSaludAPI.Tests/SanSaludAPI.Tests.csproj" />
+</Solution>

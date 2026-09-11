@@ -1,0 +1,15 @@
+meta {
+  name: GET Get Turno by Id
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://localhost:7088/api/Turnos/{{turnoId}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  turnoId: d75f9831-eb70-493d-8a93-1bc4dc8a9007
+}

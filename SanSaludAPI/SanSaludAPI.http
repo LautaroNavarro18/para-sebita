@@ -1,0 +1,78 @@
+### SanSaludAPI - Pruebas de Endpoints
+
+@baseUrl = https://localhost:5001
+@contentType = application/json
+
+### === PACIENTES ===
+
+### Crear Paciente
+POST {{baseUrl}}/api/pacientes
+Content-Type: {{contentType}}
+
+{
+  "nombre": "Juan Pérez",
+  "dni": "12345678",
+  "email": "juan@email.com"
+}
+
+### Listar Pacientes
+GET {{baseUrl}}/api/pacientes
+
+### Obtener Paciente por ID
+GET {{baseUrl}}/api/pacientes/00000000-0000-0000-0000-000000000000
+
+### === MEDICOS ===
+
+### Crear Medico
+POST {{baseUrl}}/api/medicos
+Content-Type: {{contentType}}
+
+{
+  "nombre": "Dr. García",
+  "especialidad": "Cardiología",
+  "matricula": "MED12345"
+}
+
+### Listar Medicos
+GET {{baseUrl}}/api/medicos
+
+### Obtener Medico por ID
+GET {{baseUrl}}/api/medicos/00000000-0000-0000-0000-000000000000
+
+### === TURNOS ===
+
+### Crear Turno (reemplazar IDs con valores reales)
+POST {{baseUrl}}/api/turnos
+Content-Type: {{contentType}}
+
+{
+  "pacienteId": "00000000-0000-0000-0000-000000000000",
+  "medicoId": "00000000-0000-0000-0000-000000000000",
+  "fechaHora": "2026-03-20T10:00:00"
+}
+
+### Listar Turnos
+GET {{baseUrl}}/api/turnos
+
+### Obtener Turno por ID
+GET {{baseUrl}}/api/turnos/00000000-0000-0000-0000-000000000000
+
+### Listar Turnos por Paciente
+GET {{baseUrl}}/api/turnos/paciente/00000000-0000-0000-0000-000000000000
+
+### Listar Turnos por Medico
+GET {{baseUrl}}/api/turnos/medico/00000000-0000-0000-0000-000000000000
+
+### Actualizar Turno
+PUT {{baseUrl}}/api/turnos/00000000-0000-0000-0000-000000000000
+Content-Type: {{contentType}}
+
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "pacienteId": "00000000-0000-0000-0000-000000000000",
+  "medicoId": "00000000-0000-0000-0000-000000000000",
+  "fechaHora": "2026-03-20T14:00:00"
+}
+
+### Eliminar Turno
+DELETE {{baseUrl}}/api/turnos/00000000-0000-0000-0000-000000000000

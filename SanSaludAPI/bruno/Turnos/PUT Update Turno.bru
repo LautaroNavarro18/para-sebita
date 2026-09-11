@@ -1,0 +1,24 @@
+meta {
+  name: PUT Update Turno
+  type: http
+  seq: 6
+}
+
+put {
+  url: https://localhost:7088/api/Turnos/{{turnoId}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": "d75f9831-eb70-493d-8a93-1bc4dc8a9007",
+    "pacienteId": "2b93b6a8-86f5-4d7f-8303-a0b70ce35c0d",
+    "medicoId": "5bc0e17d-6792-4c09-af0a-f0eab9521aa8",
+    "fechaHora": "2026-03-20T14:00:00"
+  }
+}
+
+vars:pre-request {
+  turnoId: d75f9831-eb70-493d-8a93-1bc4dc8a9007
+}
